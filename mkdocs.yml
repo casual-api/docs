@@ -1,0 +1,49 @@
+site_name: Casual API Documentation
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra_css:
+  - _css/extra.css
+
+repo_url: https://github.com/casual-api/docs
+edit_url: edit/main/docs/
+nav:
+  - Welcome to Casual API:
+    - index.md
+  - Topics:
+    - topics/getting-started.md
+    - topics/authorization.md
+    - topics/errors.md
+    - topics/api-bans.md
+    - topics/unique-ids.md
+  - Resources:
+    - resources/memes.md
