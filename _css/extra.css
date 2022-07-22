@@ -1,0 +1,19 @@
+:root > * {
+    --md-primary-fg-color:        #00d1b2;
+}
+
+[data-md-color-scheme="slate"] {
+    --md-primary-bg-color: #1b2432;
+}
+
+.http-request {
+    color: yellow !important;
+    font-size: 25px !important;
+    font-family: monospace !important;
+    padding-right: 10px;
+}
+
+.http-path {
+    font-family: monospace !important;
+    font-size: 20px !important;
+}
